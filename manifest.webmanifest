@@ -1,7 +1,7 @@
 {
-  "name": "Simple Demo PWA",
+  "name": "minimal Progressive Web App",
   "short_name": "PWA",
-  "start_url": "FILL_IN_URL",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#f0f",
   "theme_color": "#f0f",
