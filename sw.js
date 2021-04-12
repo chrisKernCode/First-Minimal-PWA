@@ -1,7 +1,9 @@
+const version = 'minimal-pwa_v1';
+
 self.addEventListener('install', function(event) {
     event.waitUntil(
-        caches.open('FILL_IN_CACHE_NAME_v1')
-            .then(cache => cache.addAll([
+        caches.open(version) //version 1 wichtig für updates
+            .then(cache => cache.addAll([ // offline files
                 'index.html',
                 'main.js',
                 'style.css',
@@ -17,7 +19,7 @@ self.addEventListener('install', function(event) {
 self.addEventListener('fetch', function(event) {
     event.respondWith(
       caches
-        .open("FILL_IN_CACHE_NAME_v1")
+        .open(version)
         .then(function (cache) {
           return cache.match(event.request);
         })
