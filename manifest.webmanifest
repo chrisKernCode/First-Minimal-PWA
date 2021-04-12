@@ -1,7 +1,7 @@
 {
   "name": "minimal Progressive Web App",
   "short_name": "PWA",
-  "start_url": "/index.html",
+  "start_url": "/minimal-pwa_new/index.html",
   "display": "standalone",
   "background_color": "#f0f",
   "theme_color": "#f0f",
